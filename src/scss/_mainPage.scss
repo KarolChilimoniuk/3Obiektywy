@@ -56,7 +56,36 @@ body {
             &::after {
                 transform: translateY(25px);
             }
+        }
 
+        .navigation {
+            background-color: rgba(255, 255, 255, 0.5);
+            bottom: 0;
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            position: fixed;
+            top: 0;
+
+            &__list {
+                display: flex;
+                flex-direction: column;
+                height: 50%;
+                justify-content: space-around;
+                letter-spacing: 3px;
+                list-style: none;
+                padding: 0 20px 0 20px;
+            }
+
+            &__item {
+                text-align: center;
+            }
+
+            &__link {
+                color: $black;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
 
         }
     }
