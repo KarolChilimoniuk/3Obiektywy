@@ -1,0 +1,28 @@
+body {
+    height: 100vh;
+
+    .header {
+        background-image: url("../assets/img/camera.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+
+        &__icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding: 20px 0 20px 0;
+            position: absolute;
+            width: 100%;
+            top: 0;
+        }
+
+        &__icon {
+            display: inline-block;
+            margin-right: 20px;
+            width: 25px;
+        }
+    }
+}
