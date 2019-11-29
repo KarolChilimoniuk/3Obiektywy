@@ -82,6 +82,7 @@ body {
       display: hidden;
       height: 30px;
       left: 20px;
+      opacity: 0;
       padding: 0;
       position: fixed;
       top: 20px;
@@ -92,6 +93,7 @@ body {
 
       &--visible {
         display: block;
+        opacity: 1;
         transform: translateX(0) scale(1);
       }
 
@@ -218,6 +220,7 @@ body {
       background-color: rgba(255, 255, 255, 0.8);
       display: block;
       letter-spacing: 3px;
+      opacity: 0;
       padding: 10px;
       position: absolute;
       text-transform: uppercase;
@@ -227,6 +230,7 @@ body {
       width: 100%;
 
       &--visible {
+        opacity: 1;
         transform: translateX(0%) scale(1);
       }
 
