@@ -686,19 +686,7 @@ body {
     min-height: 100vh;
     position: absolute;
     overflow: hidden;
-    -webkit-transform: translateY(100%);
-        -ms-transform: translateY(100%);
-            transform: translateY(100%);
-    -webkit-transition: -webkit-transform 2.5s linear;
-    transition: -webkit-transform 2.5s linear;
-    -o-transition: transform 2.5s linear;
-    transition: transform 2.5s linear;
-    transition: transform 2.5s linear, -webkit-transform 2.5s linear;
     width: 100%; }
-    body .header-karol--visible {
-      -webkit-transform: translateY(0);
-          -ms-transform: translateY(0);
-              transform: translateY(0); }
     body .header-karol__icons {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -745,8 +733,22 @@ body {
       cursor: pointer;
       position: fixed;
       top: 20px;
+      -webkit-transform: translateX(-500%) scale(0.01);
+          -ms-transform: translateX(-500%) scale(0.01);
+              transform: translateX(-500%) scale(0.01);
+      -webkit-transition: -webkit-transform 1s 1s linear;
+      transition: -webkit-transform 1s 1s linear;
+      -o-transition: transform 1s 1s linear;
+      transition: transform 1s 1s linear;
+      transition: transform 1s 1s linear, -webkit-transform 1s 1s linear;
       width: 35px;
       z-index: 3; }
+      body .header-karol .menu__switcher--visible {
+        display: block;
+        opacity: 1;
+        -webkit-transform: translateX(0) scale(1);
+            -ms-transform: translateX(0) scale(1);
+                transform: translateX(0) scale(1); }
       body .header-karol .menu__switcher::before, body .header-karol .menu__switcher::after {
         content: "";
         border-top: solid #fff 5px;
@@ -917,7 +919,18 @@ body {
               justify-content: center;
       margin-top: 200px;
       padding: 40px;
-      position: relative; }
+      position: relative;
+      -webkit-transform: translateY(-50%) translateX(-130%) scale(0.01);
+          -ms-transform: translateY(-50%) translateX(-130%) scale(0.01);
+              transform: translateY(-50%) translateX(-130%) scale(0.01);
+      -webkit-transition: all 1.0s 1s linear;
+      -o-transition: all 1.0s 1s linear;
+      transition: all 1.0s 1s linear; }
+      body .header-karol .section--photography--visible {
+        opacity: 1;
+        -webkit-transform: translateX(0%) scale(1);
+            -ms-transform: translateX(0%) scale(1);
+                transform: translateX(0%) scale(1); }
       body .header-karol .section--photography__img {
         height: 71px;
         margin: 10px;
