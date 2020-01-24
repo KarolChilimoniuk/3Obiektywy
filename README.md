@@ -11,14 +11,15 @@ Hello World! I'd like to present a small amateur photo portfolio created for me 
 * Visual Studio Code
 * Figma 
 
-You can see this website [here](https://karolchilimoniuk.github.io/3Obiektywy/index.html) or if you want, you can clone my repo, use command :
+You can see this website [here](https://karolchilimoniuk.github.io/3Obiektywy/index.html) or if you want, you can clone my repo, and next use command :
 
 ```
 npm install 
 ```
-to install npm necessary to work with project and next us command
+to install npms necessary to work with project.
+
+To work comfortably on local server use command:
 
 ```
 gulp
 ```
-to work on local server.
