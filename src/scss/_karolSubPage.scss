@@ -1,6 +1,6 @@
 body {
   background-color: #000;
-  height: 100vh;
+  min-height: 100vh;
 
   .header-karol {
     background-image: url("../assets/img/tree.jpg");
@@ -244,6 +244,10 @@ body {
         // transform: translateX(0%) scale(1);
       }
 
+      &__link {
+        cursor: default;
+      }
+
       &__img {
         margin: 10px;
         width: 120px;
@@ -260,19 +264,25 @@ body {
           cursor: pointer;
         }
 
-        &--bigger {
-          width: 200px;
-
-          @media (min-width: 1024px) {
-            width: 300px;
-          }
-        }
-
         @media (min-width: 1024px) {
           margin: 40px;
           width: 250px;
         }
       }
+    }
+  }
+
+  .footer {
+    bottom: 0;
+    background-color: #000;
+    display: flex;
+    height: 160px;
+    position: relative;
+
+    &__paragraph {
+      color: #fff;
+      width: 100%;
+      text-align: center;
     }
   }
 }
