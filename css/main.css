@@ -677,7 +677,7 @@ template {
 
 body {
   background-color: #000;
-  height: 100vh; }
+  min-height: 100vh; }
   body .header-karol {
     background-image: url("../assets/img/tree.jpg");
     background-position: center;
@@ -699,9 +699,10 @@ body {
           -ms-flex-pack: end;
               justify-content: flex-end;
       padding: 20px 0 20px 0;
-      position: absolute;
+      position: fixed;
       width: 100%;
-      top: 0; }
+      top: 0;
+      z-index: 3; }
     body .header-karol__link {
       cursor: default; }
     body .header-karol__icon {
@@ -716,7 +717,7 @@ body {
     body .header-karol .mobileMove {
       left: 0; }
     body .header-karol .background__filter {
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.678);
       bottom: 0;
       position: absolute;
       top: 0;
@@ -733,9 +734,6 @@ body {
       cursor: pointer;
       position: fixed;
       top: 20px;
-      -webkit-transform: translateX(-500%) scale(0.01);
-          -ms-transform: translateX(-500%) scale(0.01);
-              transform: translateX(-500%) scale(0.01);
       -webkit-transition: -webkit-transform 1s 1s linear;
       transition: -webkit-transform 1s 1s linear;
       -o-transition: transform 1s 1s linear;
@@ -745,10 +743,7 @@ body {
       z-index: 3; }
       body .header-karol .menu__switcher--visible {
         display: block;
-        opacity: 1;
-        -webkit-transform: translateX(0) scale(1);
-            -ms-transform: translateX(0) scale(1);
-                transform: translateX(0) scale(1); }
+        opacity: 1; }
       body .header-karol .menu__switcher::before, body .header-karol .menu__switcher::after {
         content: "";
         border-top: solid #fff 5px;
@@ -902,8 +897,8 @@ body {
     body .header-karol .mobileMove {
       left: 0; }
     body .header-karol .section--photography {
-      -ms-flex-line-pack: center;
-          align-content: center;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
       background-color: rgba(255, 255, 255, 0.6);
       display: -webkit-box;
       display: -ms-flexbox;
@@ -914,40 +909,52 @@ body {
               flex-direction: row;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+      min-height: 100%;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      margin-top: 200px;
-      padding: 40px;
+      padding: 80px 40px 80px 40px;
       position: relative;
-      -webkit-transform: translateY(-50%) translateX(-130%) scale(0.01);
-          -ms-transform: translateY(-50%) translateX(-130%) scale(0.01);
-              transform: translateY(-50%) translateX(-130%) scale(0.01);
-      -webkit-transition: all 1.0s 1s linear;
-      -o-transition: all 1.0s 1s linear;
-      transition: all 1.0s 1s linear; }
+      -webkit-transition: all 1s 1s linear;
+      -o-transition: all 1s 1s linear;
+      transition: all 1s 1s linear; }
       body .header-karol .section--photography--visible {
-        opacity: 1;
-        -webkit-transform: translateX(0%) scale(1);
-            -ms-transform: translateX(0%) scale(1);
-                transform: translateX(0%) scale(1); }
+        opacity: 1; }
+      body .header-karol .section--photography__link {
+        cursor: default; }
       body .header-karol .section--photography__img {
-        height: 71px;
         margin: 10px;
         width: 120px; }
         body .header-karol .section--photography__img:nth-child(odd) {
-          height: 94px;
           width: 160px; }
           @media (min-width: 1024px) {
             body .header-karol .section--photography__img:nth-child(odd) {
-              height: 176px;
               width: 300px; } }
         body .header-karol .section--photography__img:hover {
           cursor: pointer; }
         @media (min-width: 1024px) {
           body .header-karol .section--photography__img {
-            height: 148px;
+            margin: 40px;
             width: 250px; } }
+  body .footer {
+    bottom: 0;
+    background-color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 160px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative; }
+    body .footer__paragraph {
+      color: #fff;
+      width: 100%;
+      text-align: center; }
 
 html {
   -webkit-box-sizing: border-box;
