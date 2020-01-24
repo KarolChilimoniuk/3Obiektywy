@@ -936,25 +936,25 @@ body {
           body .header-karol .section--photography__img {
             margin: 40px;
             width: 250px; } }
-  body .footer {
-    bottom: 0;
-    background-color: #000;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 160px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: relative; }
-    body .footer__paragraph {
-      color: #fff;
-      width: 100%;
-      text-align: center; }
+    body .header-karol .footer {
+      bottom: 0;
+      background-color: #000;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      height: 160px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      position: relative; }
+      body .header-karol .footer__paragraph {
+        color: #fff;
+        width: 100%;
+        text-align: center; }
 
 html {
   -webkit-box-sizing: border-box;
