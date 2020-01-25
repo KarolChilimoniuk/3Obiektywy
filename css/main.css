@@ -678,7 +678,7 @@ template {
 body {
   background-color: #000;
   min-height: 100vh; }
-  body .header-karol {
+  body .header-author {
     background-image: url("../assets/img/tree.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -687,7 +687,7 @@ body {
     position: absolute;
     overflow: hidden;
     width: 100%; }
-    body .header-karol__icons {
+    body .header-author__icons {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -702,27 +702,32 @@ body {
       position: fixed;
       width: 100%;
       top: 0;
+      -webkit-transition: background-color 0.2s linear;
+      -o-transition: background-color 0.2s linear;
+      transition: background-color 0.2s linear;
       z-index: 3; }
-    body .header-karol__link {
+      body .header-author__icons--bcg {
+        background-color: #000; }
+    body .header-author__link {
       cursor: default; }
-    body .header-karol__icon {
+    body .header-author__icon {
       cursor: pointer;
       display: inline-block;
       margin-right: 20px;
       width: 25px; }
       @media (min-width: 1024px) {
-        body .header-karol__icon {
+        body .header-author__icon {
           margin-right: 60px;
           width: 40px; } }
-    body .header-karol .mobileMove {
+    body .header-author .mobileMove {
       left: 0; }
-    body .header-karol .background__filter {
+    body .header-author .background__filter {
       background-color: rgba(0, 0, 0, 0.678);
       bottom: 0;
       position: absolute;
       top: 0;
       width: 100%; }
-    body .header-karol .menu__switcher {
+    body .header-author .menu__switcher {
       background: transparent;
       border: 0;
       border-top: solid #fff 5px;
@@ -741,17 +746,17 @@ body {
       transition: transform 1s 1s linear, -webkit-transform 1s 1s linear;
       width: 35px;
       z-index: 3; }
-      body .header-karol .menu__switcher--visible {
+      body .header-author .menu__switcher--visible {
         display: block;
         opacity: 1; }
-      body .header-karol .menu__switcher::before, body .header-karol .menu__switcher::after {
+      body .header-author .menu__switcher::before, body .header-author .menu__switcher::after {
         content: "";
         border-top: solid #fff 5px;
         left: 0;
         position: absolute;
         top: 0;
         width: 100%; }
-      body .header-karol .menu__switcher::before {
+      body .header-author .menu__switcher::before {
         -webkit-transform: translateY(10px);
             -ms-transform: translateY(10px);
                 transform: translateY(10px);
@@ -760,7 +765,7 @@ body {
         -o-transition: transform 0.3s linear;
         transition: transform 0.3s linear;
         transition: transform 0.3s linear, -webkit-transform 0.3s linear; }
-      body .header-karol .menu__switcher::after {
+      body .header-author .menu__switcher::after {
         -webkit-transform: translateY(25px);
             -ms-transform: translateY(25px);
                 transform: translateY(25px);
@@ -769,17 +774,17 @@ body {
         -o-transition: transform 0.3s linear;
         transition: transform 0.3s linear;
         transition: transform 0.3s linear, -webkit-transform 0.3s linear; }
-      body .header-karol .menu__switcher.no__active {
+      body .header-author .menu__switcher.no__active {
         border-top: 0; }
-        body .header-karol .menu__switcher.no__active::after {
+        body .header-author .menu__switcher.no__active::after {
           -webkit-transform: rotateZ(-40deg);
               -ms-transform: rotate(-40deg);
                   transform: rotateZ(-40deg); }
-        body .header-karol .menu__switcher.no__active::before {
+        body .header-author .menu__switcher.no__active::before {
           -webkit-transform: rotateZ(40deg);
               -ms-transform: rotate(40deg);
                   transform: rotateZ(40deg); }
-    body .header-karol .navigation {
+    body .header-author .navigation {
       background-color: rgba(0, 0, 0, 0.9);
       bottom: 0;
       -webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
@@ -802,7 +807,7 @@ body {
       transition: left 1.3s cubic-bezier(0.77, 0, 0.175, 1);
       width: 50%;
       z-index: 2; }
-      body .header-karol .navigation__list {
+      body .header-author .navigation__list {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -817,33 +822,33 @@ body {
         list-style: none;
         padding: 0 20px 0 20px; }
         @media (min-width: 1024px) {
-          body .header-karol .navigation__list {
+          body .header-author .navigation__list {
             height: 60%; } }
-      body .header-karol .navigation__item {
+      body .header-author .navigation__item {
         cursor: pointer;
         text-align: center; }
         @media (min-width: 1024px) {
-          body .header-karol .navigation__item {
+          body .header-author .navigation__item {
             line-height: 3rem; } }
-        body .header-karol .navigation__item:nth-child(2) {
+        body .header-author .navigation__item:nth-child(2) {
           position: relative; }
-      body .header-karol .navigation__link,
-      body .header-karol .navigation .navigation__item:nth-child(2) {
+      body .header-author .navigation__link,
+      body .header-author .navigation .navigation__item:nth-child(2) {
         color: #fff;
         text-decoration: none;
         text-transform: uppercase; }
-        body .header-karol .navigation__link:hover,
-        body .header-karol .navigation .navigation__item:nth-child(2):hover {
+        body .header-author .navigation__link:hover,
+        body .header-author .navigation .navigation__item:nth-child(2):hover {
           font-size: 1.2rem; }
         @media (min-width: 1024px) {
-          body .header-karol .navigation__link,
-          body .header-karol .navigation .navigation__item:nth-child(2) {
+          body .header-author .navigation__link,
+          body .header-author .navigation .navigation__item:nth-child(2) {
             font-size: 2rem;
             letter-spacing: 5px; }
-            body .header-karol .navigation__link:hover,
-            body .header-karol .navigation .navigation__item:nth-child(2):hover {
+            body .header-author .navigation__link:hover,
+            body .header-author .navigation .navigation__item:nth-child(2):hover {
               font-size: 2.2rem; } }
-      body .header-karol .navigation .submenu {
+      body .header-author .navigation .submenu {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
@@ -872,19 +877,19 @@ body {
         -o-transition: all 0.6s linear;
         transition: all 0.6s linear;
         width: 120%; }
-        body .header-karol .navigation .submenu__element {
+        body .header-author .navigation .submenu__element {
           color: #fff; }
-        body .header-karol .navigation .submenu__link {
+        body .header-author .navigation .submenu__link {
           color: #000;
           cursor: pointer;
           text-decoration: none;
           text-transform: uppercase; }
-          body .header-karol .navigation .submenu__link:hover {
+          body .header-author .navigation .submenu__link:hover {
             font-size: 1.5rem; }
           @media (min-width: 1024px) {
-            body .header-karol .navigation .submenu__link {
+            body .header-author .navigation .submenu__link {
               font-size: 1.2rem; } }
-        body .header-karol .navigation .submenu--visible {
+        body .header-author .navigation .submenu--visible {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -892,11 +897,11 @@ body {
               -ms-transform: translateX(0);
                   transform: translateX(0); }
       @media (min-width: 1024px) {
-        body .header-karol .navigation {
+        body .header-author .navigation {
           width: 40%; } }
-    body .header-karol .mobileMove {
+    body .header-author .mobileMove {
       left: 0; }
-    body .header-karol .section--photography {
+    body .header-author .section--photography {
       -ms-flex-line-pack: start;
           align-content: flex-start;
       background-color: rgba(255, 255, 255, 0.6);
@@ -918,9 +923,9 @@ body {
       -webkit-transition: all 1s 1s linear;
       -o-transition: all 1s 1s linear;
       transition: all 1s 1s linear; }
-      body .header-karol .section--photography--visible {
+      body .header-author .section--photography--visible {
         opacity: 1; }
-      body .header-karol .section--photography .instagram-feed--container {
+      body .header-author .section--photography .instagram-feed--container {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
@@ -931,7 +936,7 @@ body {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column; }
-        body .header-karol .section--photography .instagram-feed--container .instagram_profile {
+        body .header-author .section--photography .instagram-feed--container .instagram_profile {
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center;
@@ -942,10 +947,10 @@ body {
           -webkit-box-direction: normal;
               -ms-flex-direction: column;
                   flex-direction: column; }
-          body .header-karol .section--photography .instagram-feed--container .instagram_profile .instagram_profile_image {
+          body .header-author .section--photography .instagram-feed--container .instagram_profile .instagram_profile_image {
             border-radius: 50%;
             width: 100px; }
-        body .header-karol .section--photography .instagram-feed--container .instagram_gallery {
+        body .header-author .section--photography .instagram-feed--container .instagram_gallery {
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center;
@@ -957,7 +962,7 @@ body {
               -ms-flex-direction: column;
                   flex-direction: column; }
           @media (min-width: 1024px) {
-            body .header-karol .section--photography .instagram-feed--container .instagram_gallery {
+            body .header-author .section--photography .instagram-feed--container .instagram_gallery {
               -webkit-box-orient: horizontal;
               -webkit-box-direction: normal;
                   -ms-flex-direction: row;
@@ -967,18 +972,18 @@ body {
               -webkit-box-pack: center;
                   -ms-flex-pack: center;
                       justify-content: center; } }
-          body .header-karol .section--photography .instagram-feed--container .instagram_gallery .instagram-image,
-          body .header-karol .section--photography .instagram-feed--container .instagram_gallery .instagram-sidecar {
+          body .header-author .section--photography .instagram-feed--container .instagram_gallery .instagram-image,
+          body .header-author .section--photography .instagram-feed--container .instagram_gallery .instagram-sidecar {
             width: 50%;
             margin: 40px; }
             @media (min-width: 1024px) {
-              body .header-karol .section--photography .instagram-feed--container .instagram_gallery .instagram-image,
-              body .header-karol .section--photography .instagram-feed--container .instagram_gallery .instagram-sidecar {
+              body .header-author .section--photography .instagram-feed--container .instagram_gallery .instagram-image,
+              body .header-author .section--photography .instagram-feed--container .instagram_gallery .instagram-sidecar {
                 width: 20%; } }
-            body .header-karol .section--photography .instagram-feed--container .instagram_gallery .instagram-image img,
-            body .header-karol .section--photography .instagram-feed--container .instagram_gallery .instagram-sidecar img {
+            body .header-author .section--photography .instagram-feed--container .instagram_gallery .instagram-image img,
+            body .header-author .section--photography .instagram-feed--container .instagram_gallery .instagram-sidecar img {
               width: 100%; }
-    body .header-karol .footer {
+    body .header-author .footer {
       bottom: 0;
       background-color: #000;
       display: -webkit-box;
@@ -993,7 +998,7 @@ body {
           -ms-flex-pack: center;
               justify-content: center;
       position: relative; }
-      body .header-karol .footer__paragraph {
+      body .header-author .footer__paragraph {
         color: #fff;
         width: 100%;
         text-align: center; }
