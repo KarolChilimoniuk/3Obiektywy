@@ -920,22 +920,64 @@ body {
       transition: all 1s 1s linear; }
       body .header-karol .section--photography--visible {
         opacity: 1; }
-      body .header-karol .section--photography__link {
-        cursor: default; }
-      body .header-karol .section--photography__img {
-        margin: 10px;
-        width: 120px; }
-        body .header-karol .section--photography__img:nth-child(odd) {
-          width: 160px; }
+      body .header-karol .section--photography .instagram-feed--container {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        body .header-karol .section--photography .instagram-feed--container .instagram_profile {
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+          body .header-karol .section--photography .instagram-feed--container .instagram_profile .instagram_profile_image {
+            border-radius: 50%;
+            width: 100px; }
+        body .header-karol .section--photography .instagram-feed--container .instagram_gallery {
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
           @media (min-width: 1024px) {
-            body .header-karol .section--photography__img:nth-child(odd) {
-              width: 300px; } }
-        body .header-karol .section--photography__img:hover {
-          cursor: pointer; }
-        @media (min-width: 1024px) {
-          body .header-karol .section--photography__img {
-            margin: 40px;
-            width: 250px; } }
+            body .header-karol .section--photography .instagram-feed--container .instagram_gallery {
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: row;
+                      flex-direction: row;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center; } }
+          body .header-karol .section--photography .instagram-feed--container .instagram_gallery .instagram-image,
+          body .header-karol .section--photography .instagram-feed--container .instagram_gallery .instagram-sidecar {
+            width: 50%;
+            margin: 40px; }
+            @media (min-width: 1024px) {
+              body .header-karol .section--photography .instagram-feed--container .instagram_gallery .instagram-image,
+              body .header-karol .section--photography .instagram-feed--container .instagram_gallery .instagram-sidecar {
+                width: 20%; } }
+            body .header-karol .section--photography .instagram-feed--container .instagram_gallery .instagram-image img,
+            body .header-karol .section--photography .instagram-feed--container .instagram_gallery .instagram-sidecar img {
+              width: 100%; }
     body .header-karol .footer {
       bottom: 0;
       background-color: #000;
@@ -946,7 +988,7 @@ body {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      height: 160px;
+      height: 161px;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;

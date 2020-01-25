@@ -37,8 +37,8 @@
 
             <a href="" class="header-karol__link" title="email"><img src="./assets/img/email.svg" alt="email__at"
                     class="header-karol__icon" /></a>
+            <button class="menu__switcher menu__switcher--js" aria-label="open the menu"></button>
         </div>
-        <button class="menu__switcher menu__switcher--js" aria-label="open the menu"></button>
         <nav class="navigation navigation--js">
             <ul class="navigation__list">
                 <li class="navigation__item">
@@ -64,7 +64,10 @@
             </ul>
         </nav>
         <section class="section--photography section--photography--js">
-            <div class="autor--container">
+            <div class="instagram-feed--container"></div>
+
+
+            <!-- <div class="autor--container">             -----------------------------------------------------styles using without Instagram feed library
                 <img class="author--container__img" src="" alt="">
                 <h2 class="author--container__header"></h2>
             </div>
@@ -122,12 +125,30 @@
             <a class="section--photography__link"
                 href="https://www.instagram.com/p/B1SBEGCDc9Y/?utm_source=ig_web_copy_link" target="_blank"><img
                     class="section--photography__img section--photography__img--js" src="./assets/img/Karol/desert.jpg"
-                    alt="" /></a>
+                    alt="" /></a> -->
         </section>
         <footer class="footer">
             <p class="footer__paragraph">Coded by Karol Chilimoniuk</p>
         </footer>
     </header>
+    <script src="./js/InstagramFeed/dist/InstagramFeed.min.js"></script>
+    <script>
+        (function () {
+            new InstagramFeed({
+                'username': 'chillimonek',
+                'container': document.querySelector(".instagram-feed--container"),
+                'styling': false,
+                'items': 17,
+                'items_per_row': 5,
+                'margin': 1,
+                'callback': null,
+                'display_profile': true,
+                'display_biography': false,
+                'display_gallery': true,
+                'display_igtv': false,
+            })
+        })();
+    </script>
 </body>
 
 </html>
