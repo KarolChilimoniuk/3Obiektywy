@@ -2,7 +2,7 @@ body {
   background-color: #000;
   min-height: 100vh;
 
-  .header-karol {
+  .header-author {
     background-image: url("../assets/img/tree.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -26,7 +26,12 @@ body {
       position: fixed;
       width: 100%;
       top: 0;
+      transition: background-color 0.2s linear;
       z-index: 3;
+
+      &--bcg {
+        background-color: #000;
+      }
     }
 
     &__link {
