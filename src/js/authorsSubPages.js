@@ -27,5 +27,5 @@ function loadingElements() {
 
 loadingElements();
 module.exports = {
-  karolSubPage: loadingElements
+  authorsSubPages: loadingElements
 };

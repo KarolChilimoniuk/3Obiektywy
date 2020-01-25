@@ -1,7 +1,7 @@
 "use strict";
 
 const mainPage = require("./mainPage");
-const karolSubPage = require("./karolSubPage");
+const authorsSubPages = require("./authorsSubPages");
 
 mainPage.mainPage();
-karolSubPage.karolSubPage();
+authorsSubPages.authorsSubPages();
