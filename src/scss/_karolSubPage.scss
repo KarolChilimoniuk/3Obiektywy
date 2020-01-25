@@ -244,47 +244,89 @@ body {
         // transform: translateX(0%) scale(1);
       }
 
-      &__link {
-        cursor: default;
-      }
+      .instagram-feed--container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
 
-      &__img {
-        margin: 10px;
-        width: 120px;
+        .instagram_profile {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
 
-        &:nth-child(odd) {
-          width: 160px;
-
-          @media (min-width: 1024px) {
-            width: 300px;
+          .instagram_profile_image {
+            border-radius: 50%;
+            width: 100px;
           }
         }
 
-        &:hover {
-          cursor: pointer;
-        }
+        .instagram_gallery {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
 
-        @media (min-width: 1024px) {
-          margin: 40px;
-          width: 250px;
+          @media(min-width: 1024px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+
+          .instagram-image,
+          .instagram-sidecar {
+            width: 50%;
+            margin: 40px;
+
+            @media(min-width: 1024px) {
+              width: 20%;
+            }
+
+            img {
+              width: 100%;
+            }
+          }
         }
       }
+
+      // &__link { -------------------- styles for Instagram photos using without Instagram feed library
+      //   cursor: default;
+      // }
+
+      // &__img {
+      //   margin: 10px;
+      //   width: 120px;
+
+      //   &:nth-child(odd) {
+      //     width: 160px;
+
+      //     @media (min-width: 1024px) {
+      //       width: 300px;
+      //     }
+      //   }
+
+      //   &:hover {
+      //     cursor: pointer;
+      //   }
+
+      //   @media (min-width: 1024px) {
+      //     margin: 40px;
+      //     width: 250px;
+      //   }
     }
-  }
 
-  .footer {
-    bottom: 0;
-    background-color: #000;
-    display: flex;
-    flex-direction: column;
-    height: 160px;
-    justify-content: center;
-    position: relative;
+    .footer {
+      bottom: 0;
+      background-color: #000;
+      display: flex;
+      flex-direction: column;
+      height: 160px;
+      justify-content: center;
+      position: relative;
 
-    &__paragraph {
-      color: #fff;
-      width: 100%;
-      text-align: center;
+      &__paragraph {
+        color: #fff;
+        width: 100%;
+        text-align: center;
+      }
     }
   }
 }
