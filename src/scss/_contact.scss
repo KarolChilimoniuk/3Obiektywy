@@ -1,0 +1,37 @@
+.contact--container {
+    align-content: flex-start;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    justify-content: flex-start;
+    padding: 150px 60px 80px 60px;
+    position: relative;
+    transition: all 1s 1s linear;
+
+    .contact__header {
+        letter-spacing: 0.5rem;
+        text-transform: uppercase;
+
+        &::before {
+            border-top: 5px solid black;
+            display: block;
+            content: "";
+            height: 20px;
+            width: 200px;
+        }
+
+        @media(min-width: 1024px) {
+            font-size: 1.9rem;
+        }
+    }
+
+    .contact__paragraph {
+
+        @media(min-width: 1024px) {
+            font-size: 2rem;
+            letter-spacing: 0.4rem;
+        }
+    }
+}
