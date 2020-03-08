@@ -1022,9 +1022,11 @@ body {
           justify-content: flex-start;
   padding: 150px 60px 80px 60px;
   position: relative;
-  -webkit-transition: all 1s 1s linear;
-  -o-transition: all 1s 1s linear;
-  transition: all 1s 1s linear; }
+  -webkit-transition: -webkit-transform 0.6s linear;
+  transition: -webkit-transform 0.6s linear;
+  -o-transition: transform 0.6s linear;
+  transition: transform 0.6s linear;
+  transition: transform 0.6s linear, -webkit-transform 0.6s linear; }
   .contact--container .contact__header {
     letter-spacing: 0.5rem;
     text-transform: uppercase; }
