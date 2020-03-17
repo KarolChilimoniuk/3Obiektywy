@@ -10,7 +10,7 @@ Hello World! I'd like to present a small amateur photo portfolio created for me 
 * Gulp
 * Visual Studio Code
 * Figma 
-* Instagramfeed library (used in dist catalog used to deploy project on the server and didn't uploaded to github) [InstagramFeed for Vanilla JS](https://www.cssscript.com/instagram-photos-feed/)
+* Instagramfeed library (used in dist catalog which is used to deploy project on the server and didn't uploaded to github) [InstagramFeed for Vanilla JS](https://www.cssscript.com/instagram-photos-feed/)
 
 You can see this website [here](https://karolchilimoniuk.github.io/3Obiektywy/index.html) or if you want, you can clone my repo, and next use command :
 
