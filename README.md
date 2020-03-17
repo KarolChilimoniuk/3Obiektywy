@@ -1,7 +1,7 @@
 ### 3Obiektywy
 Hello World! I'd like to present a small amateur photo portfolio created for me and my 2 friends. I write this project for practice of html, scss and vanilla JavaScript. 
 
-###Tools and technologies
+### Tools and technologies
 
 * HTML5  (semantic code and BEM)
 * CSS3 (flex + SCSS/SASS)
