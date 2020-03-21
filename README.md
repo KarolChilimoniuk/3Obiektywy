@@ -1,7 +1,7 @@
 ### 3Obiektywy
 Hello World! I'd like to present a small amateur photo portfolio created for me and my 2 friends. I write this project for practice of html, scss and vanilla JavaScript. 
 
-###Tools and technologies
+### Tools and technologies
 
 * HTML5  (semantic code and BEM)
 * CSS3 (flex + SCSS/SASS)
@@ -10,6 +10,7 @@ Hello World! I'd like to present a small amateur photo portfolio created for me 
 * Gulp
 * Visual Studio Code
 * Figma 
+* Instagramfeed library (used in dist catalog which is used to deploy project on the server and isn't uploaded to github) [InstagramFeed for Vanilla JS](https://www.cssscript.com/instagram-photos-feed/)
 
 You can see this website [here](https://karolchilimoniuk.github.io/3Obiektywy/index.html) or if you want, you can clone my repo, and next use command :
 
