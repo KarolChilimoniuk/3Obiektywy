@@ -974,7 +974,7 @@ body {
                       justify-content: center; } }
           body .header-author .section--photography .instagram-feed--container .instagram_gallery .instagram-image,
           body .header-author .section--photography .instagram-feed--container .instagram_gallery .instagram-sidecar {
-            width: 50%;
+            width: 90%;
             margin: 40px; }
             @media (min-width: 1024px) {
               body .header-author .section--photography .instagram-feed--container .instagram_gallery .instagram-image,
